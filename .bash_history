@@ -211,3 +211,123 @@ kubectl apply -f pod-configmap.yml
 kubectl delete pods --all
 kubectl get pods
 history 
+kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.14"
+kubectl get pods -A
+vi persistentvolume.yml
+kubectl get pv
+vi persistentvolume.yml
+kubectl apply -f persistentvolume.yml 
+vi persistentvolume.yml
+kubectl apply -f persistentvolume.yml 
+kubectl get pv
+cat persistentvolume.yml 
+vi pvcclaim.yml
+kubectl apply -f pvcclaim.yml 
+kubectl get pv
+kubectl get pvc
+cat pvcclaim.yml 
+vi pvcpod
+vi pvcpod.yml
+kubectl apply -f pvcpod.yml 
+Kubectl get pods
+ls
+git init
+git remote add origin https://github.com/Yathirajgs/k8practice.git
+git add .
+git commit -m "k8 first commit"
+git status
+git log
+git push origin master 
+history
+vi main.tf
+terraform plan
+vi provider.tf
+terraform plan
+terraform validate
+terraform init
+terrafrom fmt
+terraform fmt
+git clone https://github.com/Yathirajgs/scripts.git
+ls
+ls -ltr
+ls
+cat main.tf 
+cat provider.tf 
+ls
+sudo su -
+su -
+apt install awacli
+apt install awscli
+aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 334556496879.dkr.ecr.ca-central-1.amazonaws.com
+aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 334556496879.dkr.ecr.ca-central-1.amazonaws.comaws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 334556496879.dkr.ecr.ca-central-1.amazonaws.com
+aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 334556496879.dkr.ecr.ca-central-1.amazonaws.com
+exit
+docker pull gsyathiraj/tomcatproject:latest
+docker tag gsyathiraj/tomcatproject:latest 334556496879.dkr.ecr.ca-central-1.amazonaws.com/tomcat:latest
+ducker push 334556496879.dkr.ecr.ca-central-1.amazonaws.com/tomcat:latest
+docker push 334556496879.dkr.ecr.ca-central-1.amazonaws.com/tomcat:latest
+kubectl create secret docker-registry regcred --docker-server=https://index.docker.io/v1/ --docker-username=gsyathiraj --docker-password=Yathiraj94@ --docker-email=yathiraj.raj94@gmail.com
+vi secretpod.yml
+kubectl apply -f secretpod.yml 
+kubectl get pods
+kubectl delete all --all
+kubectl get pods
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+sudo apt-get install apt-transport-https --yes
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+helm version
+apt install tree
+tree jenkins
+tree docker
+tree tomcat
+kubectl get nodes
+ls
+cat depoyment.yaml 
+helm create tomcat
+ls
+cd tomcat/
+ls
+vi Chart.yaml 
+cd templates/
+ls
+rm -rf *
+cd ..
+ld
+ls
+vi values.yaml 
+cd ..
+git ls
+helm ls
+cat deployment.yaml 
+vi deployment.yaml 
+vi clusterip.yaml
+ls
+cd tomcat/
+ls
+cd templates/
+cp /root/clusterip.yaml .
+cp /root/deployment.yaml .
+cd ..
+cd 
+helm install mytomcat ./tomcat
+helm ls
+kubectl get pods
+kubectl get svc
+kubectl get pods
+kubectl get pod tomcat-944dbf64c-5mt6w -oyaml 
+helm uninstall mytomcat 
+helm install mytomcat ./tomcat --set selector_label=yathiraj
+kubectl get nodes
+kubectl get pods
+kubectl get pods tomcat-944dbf64c-gxx9b -oyaml
+kubectl get pods tomcat-944dbf64c-qvww8 -oyaml
+kubectl get svc
+kubectl get svc tomcat-ng-clusterip  -oyaml
+helm uninstall tomcat
+ls
+cd tomcat/
+tree
+cd templates/
+ls
